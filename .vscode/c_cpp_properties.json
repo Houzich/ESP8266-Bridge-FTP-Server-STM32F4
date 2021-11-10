@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "ESP-Win",
+            // "compilerPath": "E:/msys32/opt/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc.exe",
+             "compilerPath": "E:/msys32/opt/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc-8.4.0.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "includePath": [
+                "E:/msys32/home/1234/ESP8266_RTOS_SDK/components/**",
+                "E:/msys32/home/1234/ESP8266_RTOS_SDK/components/freertos/include/**",
+                "${workspaceFolder}/**",
+                "E:/msys32/home/1234/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include"
+            ],
+            "browse": {
+                "path": [
+                    "E:/msys32/home/1234/ESP8266_RTOS_SDK/components",
+                    "E:/msys32/home/1234/ESP8266_RTOS_SDK/components/freertos/include",
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "${workspaceRoot}/.vscode/browse.vc.db"
+            },
+            "intelliSenseMode": "windows-gcc-arm"
+        }
+    ],
+    "version": 4
+}

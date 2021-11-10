@@ -1,0 +1,158 @@
+{
+    "C_Cpp.clang_format_style": "Visual Studio",
+    "editor.formatOnSave": false,
+    "[cpp]": {
+        "editor.quickSuggestions": true
+    },
+    "[c]": {
+        "editor.quickSuggestions": true
+    },
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    //"C_Cpp.default.compilerPath": "E:/msys32/opt/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc.exe",
+    "C_Cpp.default.compilerPath": "E:/msys32/opt/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc-8.4.0.exe",
+    "files.associations": {
+        "ftp_server.h": "c",
+        "station.h": "c",
+        "gpio.h": "c",
+        "FIRM.C": "cpp",
+        "*.inc": "c",
+        "esp_log.h": "c",
+        "esp_system.h": "c",
+        "nvs.h": "c",
+        "ets_sys.h": "c",
+        "xstring": "c",
+        "xlocale": "c",
+        "array": "c",
+        "initializer_list": "c",
+        "list": "c",
+        "random": "c",
+        "type_traits": "c",
+        "vector": "c",
+        "xhash": "c",
+        "xtree": "c",
+        "xutility": "c",
+        "string_view": "c"
+    },
+    // "actionButtons": {
+    //     "defaultColor": "#ff0034", // Can also use string color names.
+    //     "loadNpmCommands": false, // Disables automatic generation of actions for npm commands.
+    //     "reloadButton": "♻️", // Custom reload button text or icon (default ↻). null value enables automatic reload on configuration change
+    //     "commands": [
+    //         {
+    //             //"cwd": "/home/custom_folder", 	// Terminal initial folder ${workspaceFolder} and os user home as defaults
+    //             "name": "Build",
+    //             "color": "black",
+    //             "singleInstance": true,
+    //             "command": "workbench.action.tasks.runTask",
+    //             "args": "Build App",
+    //         },
+    //         {
+    //             "name": "Clean",
+    //             "color": "black",
+    //             //"singleInstance": true,
+    //             "label": "Clean App",
+    //             "command": "make clean",
+    //             "type": "shell",
+    //             // "args": [
+    //             //     "app-clean"
+    //             // ],
+    //             // "presentation": {
+    //             //     "reveal": "always"
+    //             // }
+    //         },
+    //         {
+    //             "name": "Flash",
+    //             "color": "black",
+    //             "singleInstance": true,
+    //             "label": "Flash App",
+    //             "command": "make flash",
+    //             "type": "shell",
+    //             // "args": [
+    //             //     "flash"
+    //             // ],
+    //             "presentation": {
+    //                 "reveal": "always"
+    //             },
+    //             // "problemMatcher": [],
+    //             // "group": {
+    //             //     "kind": "build",
+    //             //     "isDefault": true
+    //             // }
+    //         },
+    //         {
+    //             "name": "Monitor",
+    //             "color": "black",
+    //             //"cwd": "E:/msys32/",
+    //             // //"singleInstance": true,
+    //             // "label": "monitor",
+    //             // "command": "make monitor",
+    //             // "type": "shell",
+    //             //"label": "monitor",
+    //             "type": "shell",
+    //             "singleInstance": true,
+    //             //"windows": {
+    //                 "command": "E:/msys32/mingw32.exe",
+    //                 //"showOutput": "always",
+    //                 "args": {
+    //                     "text": "cd E:/msys32/home/1234/ESP8266_RTOS_SDK/examples/get-started/hello_world"
+    //                     // "make",
+    //                     // "monitor"
+    //             },
+    //                 "options": {
+    //                     "cwd": "${workspaceFolder}"
+    //                 },
+    //             //},
+
+
+    //             // use options.cwd property if the Makefile is not in the project root ${workspaceRoot} dir
+    //             // "options": {
+    //             //     "cwd": "${workspaceRoot}"
+    //             // },
+    //             // "presentation": {
+    //             //     // "echo": true,
+    //             //     //"reveal": "always",
+    //             //     // "focus": false,
+    //             //     // "panel": "shared"
+    //             // },
+    //             "problemMatcher": []
+    //         },
+    //         {
+    //             "name": "Menuconfig",
+    //             "color": "black",
+    //             //"singleInstance": true,
+    //             "label": "menuconfig",
+    //             "command": "make menuconfig",
+    //             "type": "shell",
+    //             // "args": [
+    //             //     "flash"
+    //             // ],
+    //             // "presentation": {
+    //             //     "reveal": "always"
+    //             // },
+    //             // "problemMatcher": [],
+    //             // "group": {
+    //             //     "kind": "build",
+    //             //     "isDefault": true
+    //             // }
+    //         },
+    //         // {
+    //         //     "name": "Menuconfig",
+    //         //     "color": "black",
+    //         //     //"singleInstance": true,
+    //         //     "label": "menuconfig",
+    //         //     "type": "process",
+    //         //     "windows": {
+    //         //         "command": "E:/msys32/mingw32.exe",
+    //         //         "args": [
+    //         //             "make",
+    //         //             "menuconfig"
+    //         //         ]
+    //         //     },
+    //         //     // "presentation": {
+    //         //     //     "reveal": "always"
+    //         //     // },
+    //         //     // "problemMatcher": []
+    //         // },
+    //     ]
+    // }
+}

@@ -1,0 +1,191 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build App",
+            "group": "build",
+            "command": "make",
+            "type": "shell",
+            "args": [               
+                "app",
+            ],
+            "presentation": {
+                "reveal": "always",
+                "clear": true //clear terminal when starting a command
+            },
+            "problemMatcher": {
+                "base": "$gcc"
+            }
+        },
+        {
+            "label": "Erase",
+            "group": "build",
+            "command": "make",
+            "type": "shell",
+            "args": [               
+                "erase_flash",
+            ],
+            "presentation": {
+                "reveal": "always",
+                "clear": true //clear terminal when starting a command
+            },
+        },
+        {
+            "label": "Make All",
+            "group": "build",
+            "command": "make",
+            "type": "shell",
+            "args": [               
+                "all",
+            ],
+            "presentation": {
+                "reveal": "always",
+                "clear": true //clear terminal when starting a command
+            },
+            "problemMatcher": {
+                "base": "$gcc"
+            }
+        },
+        {
+            "label": "Clean App",
+            "command": "make",
+            "type": "shell",
+            "args": [
+                "app-clean"
+            ],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "Flash",
+            "command": "make",
+            "type": "shell",
+            "args": [
+                "flash"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "clear": true //clear terminal when starting a command
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Monitor",
+            "type": "process",
+            "command": "E:\\msys32\\mingw32.exe",
+            "windows": {
+                "command": "E:\\msys32\\mingw32.exe",
+                "args": [
+                    "make",
+                    "monitor"
+                ]
+            },
+            "presentation": {
+                "reveal": "always",
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "mingw32 make all",
+            "type": "process",
+            "command": "E:\\msys32\\mingw32.exe",
+            "windows": {
+                "command": "E:\\msys32\\mingw32.exe",
+                "args": [
+                    "make",
+                    "all"
+                ]
+            },
+            "presentation": {
+                "reveal": "always",
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "mingw32 make flash",
+            "type": "process",
+            "command": "E:\\msys32\\mingw32.exe",
+            "windows": {
+                "command": "E:\\msys32\\mingw32.exe",
+                "args": [
+                    "make",
+                    "-j5",
+                    "all",
+                    "flash"
+                ]
+            },
+            "presentation": {
+                "reveal": "always",
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Menuconfig",
+            "type": "process",
+            "command": "E:\\msys32\\mingw32.exe",
+            "windows": {
+                "command": "E:\\msys32\\mingw32.exe",
+                "args": [
+                    "make",
+                    "menuconfig"
+                ]
+            },
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "showReuseMessage": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Flash App and Monitor",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+             "Flash App",
+             "Monitor"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Make All Erase Flash",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+             "Make All",
+             "Erase",
+             "Flash"
+            ],
+            "problemMatcher": []
+        },
+        // {
+        //     "label": "Build and Flash",
+        //     "dependsOrder": "sequence",
+        //     "dependsOn": [
+        //      "Build App",
+        //      "Flash App"
+        //     ],
+        //     "problemMatcher": []
+        // }
+        {
+            "label": "Build and Flash",
+            "group": "build",
+            "command": "make -j5 all flash",
+            "type": "shell",
+            "args": [
+            ],
+            "presentation": {
+                "reveal": "always",
+                "clear": true //clear terminal when starting a command
+            },
+            "problemMatcher": {
+                "base": "$gcc"
+            }
+        },
+    ]
+}
