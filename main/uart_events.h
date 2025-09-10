@@ -35,3 +35,4 @@ void COM_Enable_Receive(void);
 void COM_Disable_Receive(void);
 
 #endif /* _UART_EVENTS_H_ */
+

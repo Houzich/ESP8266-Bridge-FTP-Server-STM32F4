@@ -8,3 +8,4 @@
 extern void wifi_init_sta(void);
 extern bool wifi_connect;
 #endif /* _WIFI_STATION_H_ */
+
