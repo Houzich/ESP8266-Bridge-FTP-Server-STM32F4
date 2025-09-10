@@ -260,3 +260,4 @@ void uart_events_init(void)
     // Create a task to handler UART event from ISR
     xTaskCreate(uart_event_task, "uart_event_task", 2048 * 3, NULL, 2, NULL);
 }
+
