@@ -192,3 +192,4 @@ void send_log_str(char *str);
 void send_log_sprintf(const char *format, ...);
 
 #endif
+

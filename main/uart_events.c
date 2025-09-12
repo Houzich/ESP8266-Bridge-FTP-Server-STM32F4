@@ -261,3 +261,4 @@ void uart_events_init(void)
     xTaskCreate(uart_event_task, "uart_event_task", 2048 * 3, NULL, 2, NULL);
 }
 
+
